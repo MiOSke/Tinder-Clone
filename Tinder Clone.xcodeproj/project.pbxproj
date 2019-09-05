@@ -7,8 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		57188C1D232166DB0051B68A /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57188C1C232166DB0051B68A /* User.swift */; };
+		57188C2123216DF60051B68A /* CardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57188C2023216DF60051B68A /* CardViewModel.swift */; };
+		57188C23232173C70051B68A /* Advertiser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57188C22232173C70051B68A /* Advertiser.swift */; };
+		57188C25232191970051B68A /* RegistrationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57188C24232191970051B68A /* RegistrationController.swift */; };
+		57188C27232198CF0051B68A /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57188C26232198CF0051B68A /* CustomTextField.swift */; };
 		57A4499F23201D33006A7691 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57A4499E23201D33006A7691 /* AppDelegate.swift */; };
-		57A449A123201D33006A7691 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57A449A023201D33006A7691 /* ViewController.swift */; };
+		57A449A123201D33006A7691 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57A449A023201D33006A7691 /* HomeController.swift */; };
 		57A449A423201D33006A7691 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57A449A223201D33006A7691 /* Main.storyboard */; };
 		57A449A923201D34006A7691 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57A449A723201D34006A7691 /* LaunchScreen.storyboard */; };
 		57A449B423201ED3006A7691 /* Extensions+UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57A449B323201ED3006A7691 /* Extensions+UIView.swift */; };
@@ -19,9 +24,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		57188C1C232166DB0051B68A /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		57188C2023216DF60051B68A /* CardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewModel.swift; sourceTree = "<group>"; };
+		57188C22232173C70051B68A /* Advertiser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Advertiser.swift; sourceTree = "<group>"; };
+		57188C24232191970051B68A /* RegistrationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationController.swift; sourceTree = "<group>"; };
+		57188C26232198CF0051B68A /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		57A4499B23201D33006A7691 /* Tinder Clone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tinder Clone.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		57A4499E23201D33006A7691 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		57A449A023201D33006A7691 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		57A449A023201D33006A7691 /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
 		57A449A323201D33006A7691 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		57A449A823201D34006A7691 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		57A449AA23201D34006A7691 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -43,6 +53,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		57188C1B232166CD0051B68A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				57188C1C232166DB0051B68A /* User.swift */,
+				57188C22232173C70051B68A /* Advertiser.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		57188C1E232167B10051B68A /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				57A449A023201D33006A7691 /* HomeController.swift */,
+				57188C24232191970051B68A /* RegistrationController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		57188C1F23216DE20051B68A /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				57188C2023216DF60051B68A /* CardViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
 		57A4499223201D33006A7691 = {
 			isa = PBXGroup;
 			children = (
@@ -62,13 +98,15 @@
 		57A4499D23201D33006A7691 /* Tinder Clone */ = {
 			isa = PBXGroup;
 			children = (
-				57A449B523202508006A7691 /* Views */,
-				57A449B223201EA1006A7691 /* Extensions */,
 				57A4499E23201D33006A7691 /* AppDelegate.swift */,
-				57A449A023201D33006A7691 /* ViewController.swift */,
-				57A449C2232031B1006A7691 /* Assets.xcassets */,
 				57A449A223201D33006A7691 /* Main.storyboard */,
 				57A449A723201D34006A7691 /* LaunchScreen.storyboard */,
+				57188C1F23216DE20051B68A /* ViewModels */,
+				57188C1B232166CD0051B68A /* Model */,
+				57A449B523202508006A7691 /* Views */,
+				57188C1E232167B10051B68A /* Controllers */,
+				57A449B223201EA1006A7691 /* Extensions */,
+				57A449C2232031B1006A7691 /* Assets.xcassets */,
 				57A449AA23201D34006A7691 /* Info.plist */,
 			);
 			path = "Tinder Clone";
@@ -88,6 +126,7 @@
 				57A449BA23202BE4006A7691 /* TopNavigationStackView.swift */,
 				57A449B623202542006A7691 /* HomeBottomControlsStackView.swift */,
 				57A449C42320332A006A7691 /* CardView.swift */,
+				57188C26232198CF0051B68A /* CustomTextField.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -163,12 +202,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				57A449A123201D33006A7691 /* ViewController.swift in Sources */,
+				57188C2123216DF60051B68A /* CardViewModel.swift in Sources */,
+				57188C27232198CF0051B68A /* CustomTextField.swift in Sources */,
+				57A449A123201D33006A7691 /* HomeController.swift in Sources */,
+				57188C23232173C70051B68A /* Advertiser.swift in Sources */,
 				57A449B723202542006A7691 /* HomeBottomControlsStackView.swift in Sources */,
 				57A449B423201ED3006A7691 /* Extensions+UIView.swift in Sources */,
 				57A4499F23201D33006A7691 /* AppDelegate.swift in Sources */,
 				57A449C52320332A006A7691 /* CardView.swift in Sources */,
 				57A449BB23202BE4006A7691 /* TopNavigationStackView.swift in Sources */,
+				57188C25232191970051B68A /* RegistrationController.swift in Sources */,
+				57188C1D232166DB0051B68A /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
