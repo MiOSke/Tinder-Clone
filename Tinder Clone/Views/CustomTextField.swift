@@ -15,7 +15,7 @@ class CustomTextField: UITextField {
     init(padding: CGFloat) {
         self.padding = padding
         super.init(frame: .zero)
-        layer.cornerRadius = 25
+        layer.cornerRadius = 16
     }
     
     required init?(coder aDecoder: NSCoder) {
